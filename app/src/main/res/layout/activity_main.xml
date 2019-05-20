@@ -7,10 +7,21 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="20sp"
+        android:text="Cover the top of your phone \nto activate the proximity sensor"
+        app:layout_constraintBottom_toBottomOf="@id/proxText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
         android:id="@+id/proxText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
+        android:textSize="20sp"
         android:text="Prox"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -27,16 +38,16 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="@id/proxText"
         />
+
     <Button
         android:id="@+id/lightButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Light Sensor test"
         app:layout_constraintBottom_toBottomOf="@+id/acelButton"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="@id/proxText"
-        />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/proxText" />
 
 
 </android.support.constraint.ConstraintLayout>

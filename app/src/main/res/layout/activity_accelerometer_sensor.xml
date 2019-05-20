@@ -7,11 +7,22 @@
     tools:context=".AccelerometerSensor">
 
     <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="20sp"
+        android:text=" Shake your phone up and down, \n left or right or forward and back \n to activate your accelerometer "
+        app:layout_constraintBottom_toBottomOf="@id/accelText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
         android:id="@+id/accelText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="30sp"
-        android:text="Move your phone \n to start tracking shakes"
+        android:text="Move your phone \nto start tracking shakes"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
